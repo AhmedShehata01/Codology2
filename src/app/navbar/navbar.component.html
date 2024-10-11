@@ -1,0 +1,40 @@
+<!-- Page Navbar -->
+<nav 
+  class="custom-navbar" 
+  [ngClass]="{'affix': isAffixed}"
+  data-spy="affix" 
+  data-offset-top="20">
+  <div class="container">
+    <a class="logo" href="#">Codolgy</a>
+    <ul class="nav" [ngClass]="{'show': isNavbarVisible}">
+      <li class="item">
+        <a class="link" href="#home">Home</a>
+      </li>
+      <li class="item">
+        <a class="link" href="#about">About</a>
+      </li>
+      <li class="item">
+        <a class="link" href="#skills">Skills</a>
+      </li>
+      <li class="item">
+        <a class="link" href="#projects">Projects</a>
+      </li>
+      <li class="item">
+        <a class="link" href="#blog">Blog</a>
+      </li>
+      <li class="item">
+        <a class="link" href="#contact">Contact</a>
+      </li>
+    </ul>
+    <a href="javascript:void(0)" 
+       id="nav-toggle" 
+       class="hamburger hamburger--elastic" 
+       [ngClass]="{'is-active': isNavbarVisible}" 
+       (click)="toggleNavbar()">
+      <div class="hamburger-box">
+        <div class="hamburger-inner"></div>
+      </div>
+    </a>
+  </div>
+</nav>
+<!-- End of Page Navbar -->
