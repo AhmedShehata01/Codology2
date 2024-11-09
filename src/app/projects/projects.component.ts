@@ -1,54 +1,24 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { SafeUrlPipe } from '../../Pipe/safe-url.pipe';
+// import { SafeUrlPipe }
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [ CommonModule ],
+  imports: [ CommonModule , SafeUrlPipe ],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.css'
 })
 export class ProjectsComponent {
   projects = [
     {
-      title: 'Project One',
-      description: 'This is a description for Project One.',
-      img: 'assets/imgs/project1.jpg', // replace with your image path
+      title: 'Material Request Application',
+      description: 'An ASP.NET app designed for streamlined workflows, role management, audit tracking, and multi-language support. Watch the video to see it in action!',
+      // Use embed URL with the timestamp for the video
+      videoUrl: 'https://www.youtube.com/embed/lwVE1JI39Lg?start=7',  // Embed URL with timestamp
       visitSiteUrl: 'https://example.com',
-      githubRepoUrl: 'https://github.com/example/project1'
-    },
-    {
-      title: 'Project One',
-      description: 'This is a description for Project One.',
-      img: 'assets/imgs/project1.jpg', // replace with your image path
-      visitSiteUrl: 'https://example.com',
-      githubRepoUrl: 'https://github.com/example/project1'
-    },    {
-      title: 'Project One',
-      description: 'This is a description for Project One.',
-      img: 'assets/imgs/project1.jpg', // replace with your image path
-      visitSiteUrl: 'https://example.com',
-      githubRepoUrl: 'https://github.com/example/project1'
-    },    {
-      title: 'Project One',
-      description: 'This is a description for Project One.',
-      img: 'assets/imgs/project1.jpg', // replace with your image path
-      visitSiteUrl: 'https://example.com',
-      githubRepoUrl: 'https://github.com/example/project1'
-    },
-    {
-      title: 'Project One',
-      description: 'This is a description for Project One.',
-      img: 'assets/imgs/project1.jpg', // replace with your image path
-      visitSiteUrl: 'https://example.com',
-      githubRepoUrl: 'https://github.com/example/project1'
-    },
-    {
-      title: 'Project One',
-      description: 'This is a description for Project One.',
-      img: 'assets/imgs/project1.jpg', // replace with your image path
-      visitSiteUrl: 'https://example.com',
-      githubRepoUrl: 'https://github.com/example/project1'
+      githubRepoUrl: 'https://github.com/example/repo'
     },
     
     // Add more projects as needed
