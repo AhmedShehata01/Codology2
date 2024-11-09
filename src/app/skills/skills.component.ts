@@ -34,6 +34,11 @@ export class SkillsComponent {
       title: 'Application Support',
       subtitle: 'I provide technical support and troubleshooting for seamless application performance.',
       icon: 'assets/imgs/Application-Support.png'
+    },
+    {
+      title: 'Bootstrap',
+      subtitle: 'I leverage Bootstrap to build sleek, responsive layouts and ensure a consistent user experience across devices.',
+      icon: 'assets/imgs/bootstrap.svg', // Make sure to include this image
     }
   ];
 }
